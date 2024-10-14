@@ -1,12 +1,20 @@
 import React, {useEffect, useState} from "react";
 import Particles, {initParticlesEngine} from "@tsparticles/react";
 import {loadFull} from "tsparticles";
-import logo from "./logo.svg";
-import "./App.css";
-import particlesOptions from "./particles.json";
+
+import "./styles/App.css";
+
+import particlesOptions from "./config/bgParticles.json";
+
+import Gallery from "./components/gallery";
+import LandingPage from "./components/landingPage";
 
 function App() {
     const [init, setInit] = useState(false);
+    const [optionConfig, setOptionConfig] = useState(particlesOptions);
+    const [landing, setLanding] = useState(true);
+
+    console.log(landing)
 
     useEffect(() => {
         if (init) {
@@ -17,39 +25,20 @@ function App() {
             await loadFull(engine);
         }).then(() => {
             setInit(true);
+            setLanding(true);
         });
     }, []);
 
     return (
-        <div className="App">
-            {init && <Particles options={particlesOptions}/>}
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <p>
-                    Edit <code>src/particles.json</code> to customize Particles, then save
-                    to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                <a
-                    className="App-link"
-                    href="https://particles.js.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    See Particles samples
-                </a>
-            </header>
-        </div>
+        <>
+            <div className="background" >
+                {init && <Particles options={optionConfig}/>}
+            </div>
+            <LandingPage/>
+            <div className="gallery-container">
+                <Gallery/>
+            </div>
+        </>
     );
 }
 
