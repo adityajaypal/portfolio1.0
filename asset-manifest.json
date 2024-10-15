@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio1.0/static/css/main.3da76c88.css",
+    "main.css": "/portfolio1.0/static/css/main.7e419683.css",
     "main.js": "/portfolio1.0/static/js/main.da966c0c.js",
     "static/media/EnchantedTalesFreeDemo-DOrrd.otf": "/portfolio1.0/static/media/EnchantedTalesFreeDemo-DOrrd.a20adf4e3466e01b7dde.otf",
     "index.html": "/portfolio1.0/index.html",
-    "main.3da76c88.css.map": "/portfolio1.0/static/css/main.3da76c88.css.map",
+    "main.7e419683.css.map": "/portfolio1.0/static/css/main.7e419683.css.map",
     "main.da966c0c.js.map": "/portfolio1.0/static/js/main.da966c0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3da76c88.css",
+    "static/css/main.7e419683.css",
     "static/js/main.da966c0c.js"
   ]
 }
