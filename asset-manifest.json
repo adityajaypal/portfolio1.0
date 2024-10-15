@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.0f6f0043.css",
+    "main.js": "/react-gh-pages/static/js/main.c9570c27.js",
+    "static/media/EnchantedTalesFreeDemo-DOrrd.otf": "/react-gh-pages/static/media/EnchantedTalesFreeDemo-DOrrd.a20adf4e3466e01b7dde.otf",
+    "index.html": "/react-gh-pages/index.html",
+    "main.0f6f0043.css.map": "/react-gh-pages/static/css/main.0f6f0043.css.map",
+    "main.c9570c27.js.map": "/react-gh-pages/static/js/main.c9570c27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f6f0043.css",
+    "static/js/main.c9570c27.js"
+  ]
+}
